@@ -1,0 +1,12 @@
+{
+    "name": "wamda/google-analytics-v4-php",
+    "description": "Simple google analytics wrapper for common metrics and data",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ayman",
+            "email": "ayman@wamda.com"
+        }
+    ],
+    "require": {}
+}
