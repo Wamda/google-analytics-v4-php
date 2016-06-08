@@ -1,6 +1,6 @@
 <?php
 
-namespace wamda\simple_analytics;
+namespace Wamda\GoogleAnalytics;
 
 use Google_Client; 
 use Google_Service_AnalyticsReporting;
@@ -15,7 +15,7 @@ use Google_Service_AnalyticsReporting_DimensionFilterClause;
 use Google_Service_AnalyticsReporting_OrderBy;
 
 
-class AnalyticsClass
+class Analytics
 {
     private $client;
     private $viewId;

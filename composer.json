@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "wamda\\simple_analytics\\": "src"
+            "Wamda\\GoogleAnalytics\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "wamda\\simple_analytics\\": "tests"
+            "Wamda\\GoogleAnalytics\\": "tests"
         }
     },
     "scripts": {

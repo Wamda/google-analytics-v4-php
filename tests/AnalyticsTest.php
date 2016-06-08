@@ -1,8 +1,8 @@
 <?php
 
-namespace wamda\simple_analytics;
+namespace Wamda\GoogleAnalytics;
 
-class AnalyticsClassTest extends \PHPUnit_Framework_TestCase
+class AnalyticsTest extends \PHPUnit_Framework_TestCase
 {
 
     public function __construct() {}
@@ -12,7 +12,7 @@ class AnalyticsClassTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetBasicMetrics()
     {
-        $analytics = new AnalyticsClass('34641751');
+        $analytics = new Analytics('34641751');
         $res = $analytics->getPageMetrics('2016/05/egyptian-social-network-keep-your-privacy', '2016-05-26', '2016-06-01');
 
         $this->assertArrayHasKey('pageviews', $res);
@@ -23,7 +23,7 @@ class AnalyticsClassTest extends \PHPUnit_Framework_TestCase
 
     public function testGetPageViewsByTrafficSource()
     {
-        $analytics = new AnalyticsClass('34641751');
+        $analytics = new Analytics('34641751');
         $res = $analytics->getPageViewsByTrafficSource('2016/05/egyptian-social-network-keep-your-privacy', '2016-05-26', '2016-06-01');
 
         $this->assertArrayHasKey('Direct', $res);
@@ -34,7 +34,7 @@ class AnalyticsClassTest extends \PHPUnit_Framework_TestCase
 
     public function testGetPageViewsByCountry() 
     {
-        $analytics = new AnalyticsClass('34641751');
+        $analytics = new Analytics('34641751');
         $res = $analytics->getPageViewsByCountry('2016/05/egyptian-social-network-keep-your-privacy', '2016-05-26', '2016-05-26');
 
         $this->assertNotEmpty($res);
