@@ -1,5 +1,5 @@
 {
-    "name": "wamda/google-analytics-v4-php",
+    "name": "Wamda/google-analytics-v4-php",
     "type": "library",
     "description": "Simple google analytics access for commong metrics.",
     "keywords": [
