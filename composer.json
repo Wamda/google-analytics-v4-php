@@ -1,12 +1,46 @@
 {
-    "name": "wamda/google-analytics-v4-php",
-    "description": "Simple google analytics wrapper for common metrics and data",
+    "name": "wamda/simple_analytics",
+    "type": "library",
+    "description": "Simple google analytics access for commong metrics.",
+    "keywords": [
+        "google",
+        "analytics"
+    ],
+    "homepage": "https://github.com/wamda/simple_analytics",
     "license": "MIT",
     "authors": [
         {
-            "name": "Ayman",
-            "email": "ayman@wamda.com"
+            "name": "Ayman Farhat",
+            "email": "ayman.farhat1@gmail.com",
+            "homepage": "http://aymanfarhat.com",
+            "role": "Developer"
         }
     ],
-    "require": {}
+    "require": {
+        "php" : "~5.5|~7.0",
+        "google/apiclient": "^2.0.0@RC"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "scrutinizer/ocular": "~1.1",
+        "squizlabs/php_codesniffer": "~2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "wamda\\simple_analytics\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "wamda\\simple_analytics\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
 }
