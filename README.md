@@ -1,16 +1,10 @@
-# :package_name
+# google-analytics-v4-php
 
-[![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
 [![Build Status][ico-travis]][link-travis]
-[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
 [![Quality Score][ico-code-quality]][link-code-quality]
-[![Total Downloads][ico-downloads]][link-downloads]
 
-**Note:** Replace ```:author_name``` ```:author_username``` ```:author_website``` ```:author_email``` ```:vendor``` ```:package_name``` ```:package_description``` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md) and [composer.json](composer.json) files, then delete this line.
-
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what
-PSRs you support to avoid any confusion with users and contributors.
+A simple wrapper package for basic and advanced queries on top of Google Analytics V4 API
 
 ## Install
 
@@ -23,8 +17,8 @@ $ composer require :vendor/:package_name
 ## Usage
 
 ``` php
-$skeleton = new League\Skeleton();
-echo $skeleton->echoPhrase('Hello, League!');
+$analytics = new AnalyticsClass('yourViewId');
+$res = $analytics->getPageMetrics('/page-url-here', '2016-05-26', '2016-06-01');
 ```
 
 ## Change log
@@ -37,17 +31,9 @@ Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recen
 $ composer test
 ```
 
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) and [CONDUCT](CONDUCT.md) for details.
-
-## Security
-
-If you discover any security related issues, please email :author_email instead of using the issue tracker.
-
 ## Credits
 
-- [:author_name][link-author]
+- [Ayman farhat][http://aymanfarhat.com]
 - [All Contributors][link-contributors]
 
 ## License
