@@ -1,8 +1,6 @@
 # google-analytics-v4-php
 
 [![Software License][ico-license]](LICENSE.md)
-[![Build Status][ico-travis]][link-travis]
-[![Quality Score][ico-code-quality]][link-code-quality]
 
 A simple wrapper package for basic and advanced queries on top of Google Analytics V4 API
 
@@ -33,7 +31,7 @@ $ composer test
 
 ## Credits
 
-- [Ayman farhat][http://aymanfarhat.com]
+- [Ayman farhat][link-author]
 - [All Contributors][link-contributors]
 
 ## License
@@ -52,5 +50,5 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [link-scrutinizer]: https://scrutinizer-ci.com/g/:vendor/:package_name/code-structure
 [link-code-quality]: https://scrutinizer-ci.com/g/:vendor/:package_name
 [link-downloads]: https://packagist.org/packages/:vendor/:package_name
-[link-author]: https://github.com/:author_username
+[link-author]: https://github.com/aymanfarhat
 [link-contributors]: ../../contributors
