@@ -15,7 +15,7 @@ use Google_Service_AnalyticsReporting_DimensionFilterClause;
 use Google_Service_AnalyticsReporting_OrderBy;
 
 
-class GoogleAnalytics
+class GoogleAnalyticsClass
 {
     private $client;
     private $viewId;
